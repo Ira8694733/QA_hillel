@@ -75,11 +75,9 @@ console.log(sumOfNumbers);
 /* Task - 5
   Create program to display the following sequence: 7 14 21 28 35 42 49 */
 
-  for (let i = 7; i <= 49; i--) {
-    i+=7
-    console.log("Time's up!",  i);
+  for (let i = 7; i <= 49; i+=7) {
+    console.log(i);
   }
-
 
 /* Task - 6
   implement algorithm which calculates factorial for 
@@ -87,6 +85,29 @@ console.log(sumOfNumbers);
   assign the result to corresponding variable
   what is factorial: https://www.mathsisfun.com/numbers/factorial.html 
 */
+
+let factorial = 1;
+let number = 1;
+
+// using for operator
+for (let i = 1; i <= 7; i++) {
+  factorial *= i;
+}
+console.log(factorial);
+
+// using while operator
+while (number <= 7) {
+  factorial *= number;
+  number++;
+}
+console.log(factorial);
+
+// using do...while operator
+do {
+  factorial *= number;
+  number++;
+} while (number <= 7);
+console.log(factorial);
 
 /* Task - 7
   implement algorithm filling a bathtub using buckets. 
@@ -98,3 +119,14 @@ console.log(sumOfNumbers);
 let bucket = 5; //capacity of one bucket
 let initialBathState = 0; //the initial value of the amount of water in the bathroom
 let bathCapacity = 60; //
+
+let bathWaterLevel = 0;  // початковий рівень води в ванній
+
+while (bathWaterLevel < bathCapacity) {
+  if (bucket <= (bathCapacity - bathWaterLevel)) {
+    bathWaterLevel += bucket;
+    initialBathState++;
+  } 
+}
+
+console.log(initialBathState);
