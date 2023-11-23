@@ -1,0 +1,169 @@
+/* Task - 1
+    Створіть масив (array1) з 5 любих елементівю
+    Створіть функцію, яка буде повертати другий елемент з масиву
+*/
+let arr1 = [1, 'Olga', 2,5, 'Ivan']
+console.log (arr1)
+
+let funcArr1 = () => {
+    return  arr1[1] // 1 оскільки нумерація в []  починається з 0
+  };
+  console.log(funcArr1())
+
+/* Task - 2
+    Створіть функцію, який додасть 1 елемент до масиву з попередньої задачи (array1) (наприклад, "new item")
+*/
+let funcArr2 =() => {
+  arr1.push("new item") // без return щскільки push сама по собі повертає нову довжину масиву, а не сам масив
+}
+funcArr2()
+console.log (arr1)
+
+/* Task - 3
+    Створіть другий масив (array2), потім створить функцію, яка отримує 2 масиви і повертає масив, що містить елементи з масивів array1 та array2
+*/
+
+let arr2 = ['apple', 'banana']
+
+let funcRes = () => {
+  return arr1.concat(arr2)
+}
+console.log(funcRes())
+
+/* Task - 4 (Not required)
+    Створіть функцію, яка буде повертає новий масив заданої довжини, заповнений заданим значенням
+    https://www.w3schools.com/jsref/jsref_fill.asp
+*/
+
+let createFillArray = (length, value) => {
+  return Array(length).fill(value); // Створює новий масив за Array (довжина = length)+ заповнює його значенням fill. 
+}
+console.log(createFillArray(4, 'kivi'));
+
+/* Task - 5 (Not required)
+    Створіть функцію , яка отримує масив об'єктів
+    наприклад, [{name: "John Snow", age: 45}, {name: "Cersei Lannister", age: 32}, {name: "Daenerys Targaryen", age: 18}, {name: "Jorah Mormont", age: 28}]]
+    і повертає кількість людей, чиє ім'я "John" або вік менший за 30
+     не використовуйте цикли
+*/
+let people = [
+  {name: "John Snow", age: 45},
+  {name: "Cersei Lannister", age: 32}, 
+  {name: "Daenerys Targaryen", age: 18}, 
+  {name: "Jorah Mormont", age: 28}
+];
+
+let countPeople = (a) => {
+  return a.name.includes("John") || a.age < 30;
+}
+
+const result = people.filter(countPeople);
+console.log(result);
+
+
+/* Task - 6 (Not required)
+    Створіть функцію , яка отримує масив об'єктів
+    наприклад, [{name: "John Snow", age: 45}, {name: "Cersei Lannister", age: 32}, {name: "Daenerys Targaryen", age: 18}, {name: "Jorah Mormont", age: 28}]]
+    і повертає кількість людей, чиє ім'я "John" або вік менший за 30
+    * не використовуйте цикли
+    * https://www.w3schools.com/jsref/jsref_filter.asp
+*/
+
+// дивись Task - 5
+
+/* Task - 7 (Not required)
+    Створіть функцію , яка отримує масив об'єктів
+    наприклад, [{name: "John Snow", age: 45}, {name: "Cersei Lannister", age: 32}, {name: "Daenerys Targaryen", age: 18}, {name: "Jorah Mormont", age: 28}]]
+    і повертає новий масив усіх людей, старших за 30 років
+*/
+let agePeople = (a) => {
+  return a.age > 30;
+}
+
+const resultAge = people.filter(agePeople);
+console.log(resultAge);
+
+/* Task - 8 (Not required)
+
+    Створіть функцію, яка буде приймати масив об'єктів
+    наприклад, [{ім'я: "Jane", вік: 45}, {ім'я: "Peter", вік: 18}].
+    та поверне новий масив об'єктів, що містить додаткову властивість "state"
+    state = "baby", якщо вік дорівнює 0 або 3,
+    state = "preschooler", якщо вік від 4 до 5,
+    state = "teenager", якщо вік від 13 до 18 років
+
+ https://www.w3schools.com/jsref/jsref_map.asp
+*/
+let person = [
+  { name: "Jane", age: 45 },
+  { name: "Peter", age: 18 },
+  { name: "Tom", age: 3 }
+];
+
+let agePerson = (a) => {
+  let state
+    if (a.age === 0 || a.age === 3) {
+      state = "baby";
+    } else if (a.age >= 4 && a.age <= 5) {
+      state = "preschooler";
+    } else if (a.age >= 13 && a.age <= 18) {
+      state = "teenager";
+    }    
+    return { ...a, state };  
+}
+
+const resultPerson = person.map(agePerson);
+console.log(resultPerson);
+
+/* Task - 9 (Not required)
+
+    Створити функцію для знаходження індексу мінімального елементу масиву;
+    наприклад,  console.log(minItem([6,8,2,9,1,3])) // 4
+*/
+let minItem = (arr) => {
+  if (arr.length === 0) {
+  }
+
+  let minIndex = 0;
+  let minValue = arr[0];
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < minValue) {
+      minValue = arr[i];
+      minIndex = i;
+    }
+  }
+
+  return minIndex;
+}
+
+console.log(minItem([6, 8, 2, 9, 1, 3])); // Виведе 4
+
+/* Task - 10 (Not required)
+
+   Створити функцію, яка поверне кількість допустимих (НЕ not null/undefined) значень масиву
+*/
+
+let arr10 = [1, null, 3, undefined, 5, 6];
+
+let filterValidValues = (el) => {
+  return el !== null && el !== undefined;  
+}
+const resultArr10 = arr10.filter(filterValidValues);
+console.log(resultArr10);
+
+/* Task - 11 (Not required)
+
+   Створити функцію, яка відфільтрує нульові та невизначені значення
+  якщо кількість невірних записів більше 3 - потрібно згенерувати помилку "Дані потрібно переглянути"
+*/
+
+let arrNull = [1, null, 3, undefined, 5, 6];
+
+let resultArrNull = arrNull.filter(el => el != null && el !== undefined);
+
+if (resultArrNull.length > 3) {
+  console.error("Дані потрібно переглянути");
+} else {
+  console.log(resultArrNull);
+}
