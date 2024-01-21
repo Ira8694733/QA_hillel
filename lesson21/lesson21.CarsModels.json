@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "65ad8f8911c2dbb48a28541f"
+  },
+  "carBrandId": 1,
+  "title": "TT",
+  "createdAt": "2021-05-11 13:13:53",
+  "updatedAt": "2021-05-11 13:13:53"
+},
+{
+  "_id": {
+    "$oid": "65ad8f8911c2dbb48a285420"
+  },
+  "carBrandId": 1,
+  "title": "R8",
+  "createdAt": "2021-05-11 13:13:53",
+  "updatedAt": "2021-05-11 13:13:53"
+},
+{
+  "_id": {
+    "$oid": "65ad8f8911c2dbb48a285421"
+  },
+  "carBrandId": 1,
+  "title": "Q7",
+  "createdAt": "2021-05-11 13:13:53",
+  "updatedAt": "2021-05-11 13:13:53"
+},
+{
+  "_id": {
+    "$oid": "65ad8f8911c2dbb48a285422"
+  },
+  "carBrandId": 1,
+  "title": "A6",
+  "createdAt": "2021-05-11 13:13:53",
+  "updatedAt": "2021-05-11 13:13:53"
+},
+{
+  "_id": {
+    "$oid": "65ad8f8911c2dbb48a285423"
+  },
+  "carBrandId": 1,
+  "title": "A8",
+  "createdAt": "2021-05-11 13:13:53",
+  "updatedAt": "2021-05-11 13:13:53"
+}]

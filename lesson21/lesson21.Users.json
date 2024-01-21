@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "65ad8ee511c2dbb48a285415"
+  },
+  "email": "qqwew@mail.ru",
+  "password": "$2a$12$zEG3VmDsw7RegEYSRSwgAeXBvTilcC4E6WRdbjpNJly5zNcfY/nfO",
+  "createdAt": "2021-09-08 13:03:33",
+  "updatedAt": "2021-09-08 13:03:33",
+  "role": "user"
+},
+{
+  "_id": {
+    "$oid": "65ad8ee511c2dbb48a285416"
+  },
+  "email": "sdfsdfsdf@mail.ru",
+  "password": "$2a$12$7a4MT2HEgC6dY40E3cLiKuvfU2j6ol5KK4RPu4bBq0f1jMwy.WJ36",
+  "createdAt": "2021-09-08 13:05:25",
+  "updatedAt": "2021-09-08 13:05:25",
+  "role": "user"
+},
+{
+  "_id": {
+    "$oid": "65ad8ee511c2dbb48a285417"
+  },
+  "email": "asdfgh@sdfdf.com",
+  "password": "$2a$12$zq8BhMvLQjGUZhPqrKQCReiZcEfFpk.rwMvTfrjAEOdJCG1.s5qXi",
+  "createdAt": "2021-09-09 15:49:00",
+  "updatedAt": "2021-09-09 15:49:00",
+  "role": "user"
+},
+{
+  "_id": {
+    "$oid": "65ad8ee511c2dbb48a285418"
+  },
+  "email": "qwewwerew@mail.ru",
+  "password": "$2a$12$wp8TPEf42LJ55.AIbgtxguVn6M700Reb7Yf8hiVBNc1XJx2U.MDKy",
+  "createdAt": "2021-09-16 15:46:20",
+  "updatedAt": "2021-09-16 15:46:20",
+  "role": "user"
+},
+{
+  "_id": {
+    "$oid": "65ad8ee511c2dbb48a285419"
+  },
+  "email": "fsdfsdfsd@mail.ru",
+  "password": "$2a$12$nWGdqQVutn.sTBFBJus86.sZJvPwuiLDmrL0SFBOBpAV78SfO1YxW",
+  "createdAt": "2021-09-20 13:01:49",
+  "updatedAt": "2021-09-20 13:01:49",
+  "role": "user"
+}]
